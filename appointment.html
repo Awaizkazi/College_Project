@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="index.html">
+          <span>MICHEAL MOTORS</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="why.html">Why Us <span class="sr-only">(current)</span> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="appointment.html">appointment</a>
+            </li>
+          </ul>
+          <div class="quote_btn-container">
+            <form class="form-inline">
+              <button class="btn   nav_search-btn" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : +91 8879682175
+              </span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- <head> -->
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+  
+    <title>Micheal Motors</title>
+  
+  
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+  
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+  
+  <!-- </head -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment</title>
+</head>
+<body>
+  
+<!-- <?php include 'test.php';?> -->
+  <form action="app.php" method="post" accept-charset="UTF-8">
+    <fieldset>
+      <legend>For person</legend>
+      <label>
+        Name
+        <input type="text" name="Name" required>
+      </label>
+      <div class="two-cols">
+        <label>
+          Email address
+          <input type="email" name="Email" required>
+        </label>
+        <label>
+          Phone number
+          <input type="number" name="Phone">
+        </label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Appointment request</legend>
+      <div class="two-cols">
+        <label>
+          Date
+          <input type="date" name="Date" required>
+        </label>
+        <div class="inline">
+          <label>
+            <input type="radio" name="Confirmation requested by" value="morning" checked>
+            Morning
+          </label>
+          <label>
+            <input type="radio" name="Confirmation requested by" value="afternoon">
+            Afternoon
+          </label>
+        </div>
+      </div>
+      <p>Confirmation requested by</p>
+      <div class="inline">
+        <label>
+          <input type="checkbox" name="Confirmation requested by" value="email" checked>
+          Email
+        </label>
+        <label>
+          <input type="checkbox" name="Confirmation requested by" value="phone">
+          Phone call
+        </label>
+      </div>
+    </fieldset>
+    <div class="btns">
+      <!-- <input type="text" name="_gotcha" value="" style="display:none;"> -->
+      <!-- <input type="submit" value="Submit request"> -->
+      <button type="submit">Submit request</button>
+    </div>
+  </form>
+   <section class="info_section ">
+    <div class="info_container ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="info_contact ">
+              <div class="row">
+                <div class="col-md-3">
+                  <a href="#" class="link-box">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>
+                      Kurla East Mumbai
+                    </span>
+                  </a>
+                </div>
+                <div class="col-md-5">
+                  <a href="#" class="link-box">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>
+                      Call +01 1234567890
+                    </span>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="link-box">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>
+                      Michealmotors@gmail.com
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5  col-lg-3 mx-auto">
+            <div class="info_form ">
+              <form action="#">
+                <input type="email" placeholder="Enter Your Email" />
+                <button>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="info_logo">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              MICHEAL MOTORS
+            </span>
+          </a>
+        </div>
+        <div class="social-box">
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+     
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+</body>
+</html>

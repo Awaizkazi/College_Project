@@ -1,0 +1,711 @@
+
+<?php
+//include('connect-mysql.php');
+$con=mysqli_connect('localhost','root','','servicecont') or die("Unable to connect to MySQL");
+echo "Connected to MySQL<br>";
+
+//$sqlget = "SELECT * FROM testimonial";
+$sqldata = mysqli_query($con , "SELECT * FROM testimonial");
+$row = mysqli_fetch_assoc($sqldata);
+echo $row['T_id'];
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Micheal Motors</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- header section strats -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="index.html">
+          <span>MICHEAL MOTORS</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="why.html">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="appointment.html">appointment</a>
+            </li>
+          </ul>
+          <div class="quote_btn-container">
+            <form class="form-inline">
+              <button class="btn   nav_search-btn" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : +91 8879682175
+              </span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
+  <!-- slider section -->
+  <section class="slider_section ">
+    <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container ">
+            <div class="row">
+              <div class="col-md-6 col-lg-5">
+                <div class="detail-box">
+                  <h1>
+                    Car Repair <br>
+                    And Maintenance
+                  </h1>
+                  <p>
+                    As the owner or user of a commercial vehicle, you must always make sure that your vehicles are roadworthy and safe. Aside from the road safety benefits and it being your legal obligation. </p>
+                  <div class="btn-box">
+                    <a href="about.html" class="btn-1">
+                      Read More
+                    </a>
+                    <a href="" class="btn-2">
+                      Contact Us
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-7">
+                <div class="img-box">
+                  <img src="images/slider-img.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container ">
+            <div class="row">
+              <div class="col-md-6 col-lg-5">
+                <div class="detail-box">
+                  <h1>
+                    Car Repair <br>
+                    And Maintenance
+                  </h1>
+                  <p>
+                    As the owner or user of a commercial vehicle, you must always make sure that your vehicles are roadworthy and safe. Aside from the road safety benefits and it being your legal obligation.</p>
+                  <div class="btn-box">
+                    <a href="" class="btn-1">
+                      Read More
+                    </a>
+                    <a href="" class="btn-2">
+                      Contact Us
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-7">
+                <div class="img-box">
+                  <img src="images/slider-img.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container ">
+            <div class="row">
+              <div class="col-md-6 col-lg-5">
+                <div class="detail-box">
+                  <h1>
+                    Car Repair <br>
+                    And Maintenance
+                  </h1>
+                  <p>
+                    Anything embarrassing hidden in the middle of text. All the Lorem Ipsuanything embarrassing hidden in the middle of text. All the Lorem Ipsumm </p>
+                  <div class="btn-box">
+                    <a href="" class="btn-1">
+                      Read More
+                    </a>
+                    <a href="" class="btn-2">
+                      Contact Us
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-7">
+                <div class="img-box">
+                  <img src="images/slider-img.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#customCarousel1" data-slide-to="1"></li>
+        <li data-target="#customCarousel1" data-slide-to="2"></li>
+      </ol>
+    </div>
+  </section>
+  <!-- end slider section -->
+
+  <!-- service section -->
+
+  <section class="service_section ">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Services
+        </h2>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s1.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                General Maintenance
+              </h4>
+              <p>
+                General maintenance- Lubrication- Hydraulic- Mast Maintenance.Notification of scheduled service will be sent 1 week prior to scheduled service date.Turn around for routine scheduled service not to exceed 48 hours.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s2.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Repair and Replacement
+              </h4>
+              <p>
+                Repairs and replacement parts shall themselves be subject to the foregoing obligations for a period of 12 months from the date of repair or replacement.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s3.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Tire Repair and Replacement
+              </h4>
+              <p>
+                Tire repair means a process that includes expanding a hole, tear, fissure or blemish in a tire casing by grinding or gouging, applying adhesive and filling the hole or crevice with rubber.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s4.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Wheel Alignment
+              </h4>
+              <p>
+                Wheel alignment shall be performed at Pro Align in Decatur, Alabama prior to the apparatus being delivered. The alignment shall be done with the truck fully loaded.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s5.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Fuel System Repair
+              </h4>
+              <p>
+                The components which store or transport fuel on board the vehicle and comprise the fuel tank system, all fuel and vapour lines, any non-tank mounted fuel pumps and the activated carbon canister.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s6.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Tune Up
+              </h4>
+              <p>
+                A tune-up is a procedure that's done periodically to keep a car running well. You might want to take your car in for a tune-up before leaving on a cross-country road trip.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Us
+              </h2>
+            </div>
+            <p>
+              At Micheal Auto Works, we are passionate about our work. We are certified engineers, technicians and are qualified to perform all possible services that your standard, hybrid or even electric vehicle may require. We are more specialized in high voltage systems services supported by our bespoke computer diagnostics. </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- why section -->
+
+  <section class="why_section ">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Why Choose Us
+        </h2>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mx-auto">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/w1.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Best Workers
+              </h4>
+              <p>
+                A reliable and dependable employee is a trusted one. Reliability is an important factor in knowing that the job will get done and it will get done well. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mx-auto ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/w2.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Best Materials
+              </h4>
+              <p>
+                Generators on the Internet tend to repeat predefined chunks as necessary
+              </p>
+              <a href="about.html">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mx-auto">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/w3.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Best Service
+              </h4>
+              <p>
+                Providing excellent customer service means going the extra mile in making sure a customer is happy and satisfied with a company's products or services. It also involves providing service to a customer in a timely, pleasant manner.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end why section -->
+
+  <!-- client section -->
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Testimonial
+        </h2>
+        <p>
+          Even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+        </p>
+      </div>
+    </div>
+    <div class="container px-0">
+      <div id="customCarousel2" class="carousel  slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="images/client.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            <link rel="stylesheet" href="test.php">
+<?php
+//include('connect-mysql.php');
+$con=mysqli_connect('localhost','root','','servicecont') or die("Unable to connect to MySQL");
+// echo "Connected to MySQL<br>";
+
+//$sqlget = "SELECT * FROM testimonial";
+$sqldata = mysqli_query($con , "SELECT * FROM testimonial");
+$row = mysqli_fetch_assoc($sqldata);
+echo $row['T_id'];
+echo $row['C_Name'];
+echo $row['msg'];
+?>
+
+<tr>
+   <!-- <td> </td> -->
+   <td><?php echo $row['T_id']; ?> </td>
+   <td><?php echo $row['C_Name']; ?> </td>
+   <td><?php echo $row['msg']; ?> </td>
+</tr>
+                          <!-- </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum
+                        dolore eu fugia
+                      </p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="images/client.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          
+<?php
+//include('connect-mysql.php');
+$con=mysqli_connect('localhost','root','','servicecont') or die("Unable to connect to MySQL");
+echo "Connected to MySQL<br>";
+
+//$sqlget = "SELECT * FROM testimonial";
+$sqldata = mysqli_query($con , "SELECT * FROM testimonial");
+$row = mysqli_fetch_assoc($sqldata);
+echo $row['T_id'];
+?>
+                          <!-- </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum
+                        dolore eu fugia
+                      </p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="images/client.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+<?php
+//include('connect-mysql.php');
+$con=mysqli_connect('localhost','root','','servicecont') or die("Unable to connect to MySQL");
+echo "Connected to MySQL<br>";
+
+//$sqlget = "SELECT * FROM testimonial";
+$sqldata = mysqli_query($con , "SELECT * FROM testimonial");
+$row = mysqli_fetch_assoc($sqldata);
+echo $row['T_id'];
+?>
+                          <!-- <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum
+                        dolore eu fugia
+                      </p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end client section -->
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <div class="heading_container ">
+              <h2>
+                Get In Touch
+              </h2>
+            </div>
+            <form action="contact.php" method="post">
+              <div>
+                <input type="text" name = 'Name' placeholder="Enter your Name"  pattern="[a-z]{1,20}" />
+              </div>
+              <div>
+                <input type="email" name  = 'Email'placeholder="Enter Email" />
+              </div>
+              <div>
+                <input type="tel" name = 'Phone' placeholder="Your Phone Number" pattern="{9}" max="10" min="10"/>
+              </div>
+              <div>
+                <input type="text" class="message-box" name = 'Message'placeholder="Your Queries" />
+              </div>
+              <div class="btn_box ">
+                <button>
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/contact-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  <!-- info section -->
+
+  <section class="info_section ">
+    <div class="info_container ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="info_contact ">
+              <div class="row">
+                <div class="col-md-3">
+                  <a href="#" class="link-box">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>
+                      Kurla East Mumbai
+                    </span>
+                  </a>
+                </div>
+                <div class="col-md-5">
+                  <a href="#" class="link-box">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>
+                      Call +91 8879682175
+                    </span>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="link-box">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>
+                      Michealmotors@gmail.com
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5  col-lg-3 mx-auto">
+            <div class="info_form ">
+              <form action="#">
+                <input type="email" placeholder="Enter Your Email" />
+                <button>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="info_logo">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              MICHEAL MOTORS
+            </span>
+          </a>
+        </div>
+        <div class="social-box">
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
